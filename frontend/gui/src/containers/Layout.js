@@ -16,14 +16,15 @@ const CustomLayout = (props) => {
                     style={{ lineHeight: '64px' }}
                 >
                     {
-                        this.props.isAuthenticated ?
+                        props.isAuthenticated ?
                             <Menu.Item key="2">
                                 Logout
                             </Menu.Item>
                             :
                             <Menu.Item key="2">
-                                <Link to="/login">Login</Link>
+                                <Link to="/">Login</Link>
                             </Menu.Item>
+
                     }
                     <Menu.Item key="1">
                         <Link to="/">Posts</Link>
