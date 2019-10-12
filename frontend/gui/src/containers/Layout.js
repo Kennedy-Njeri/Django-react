@@ -1,55 +1,71 @@
 import React from "react";
 import { Layout, Menu, Breadcrumb } from 'antd';
 import {Link} from 'react-router-dom'
+import * as actions from "../store/actions/auth";
+import {connect} from "react-redux";
 
 const { Header, Content, Footer } = Layout;
 
-const CustomLayout = (props) => {
-    return (
-        <Layout>
-            <Header style={{ position: 'fixed', zIndex: 1, width: '100%' }}>
-                <div className="logo" />
-                <Menu
-                    theme="dark"
-                    mode="horizontal"
-                    defaultSelectedKeys={['2']}
-                    style={{ lineHeight: '64px' }}
-                >
-                    {
-                        props.isAuthenticated ?
-                            <Menu.Item key="2">
-                                Logout
-                            </Menu.Item>
-                            :
-                            <Menu.Item key="2">
-                                <Link to="/">Login</Link>
-                            </Menu.Item>
+class CustomLayout extends React.Component{
 
-                    }
-                    <Menu.Item key="1">
-                        <Link to="/">Posts</Link>
-                    </Menu.Item>
+    render() {
+        return (
+            <Layout>
+                <Header style={{ position: 'fixed', zIndex: 1, width: '100%' }}>
+                    <div className="logo" />
+                    <Menu
+                        theme="dark"
+                        mode="horizontal"
+                        defaultSelectedKeys={['2']}
+                        style={{ lineHeight: '64px' }}
+                    >
+                        {
+                            this.props.isAuthenticated ?
+                                <Menu.Item key="2">
+                                    Logout
+                                </Menu.Item>
+                                :
+                                <Menu.Item key="2" onClick={this.props.logout}>
+                                    <Link to="/">Login</Link>
+                                </Menu.Item>
+
+                        }
+                        <Menu.Item key="1">
+                            <Link to="/">Posts</Link>
+                        </Menu.Item>
 
 
-                </Menu>
-            </Header>
-            <Content style={{ padding: '0 50px', marginTop: 64 }}>
-                <Breadcrumb style={{ margin: '16px 0' }}>
-                    <Breadcrumb.Item><Link to="/">Home</Link></Breadcrumb.Item>
-                    <Breadcrumb.Item><Link to="/">List</Link></Breadcrumb.Item>
+                    </Menu>
+                </Header>
+                <Content style={{ padding: '0 50px', marginTop: 64 }}>
+                    <Breadcrumb style={{ margin: '16px 0' }}>
+                        <Breadcrumb.Item><Link to="/">Home</Link></Breadcrumb.Item>
+                        <Breadcrumb.Item><Link to="/">List</Link></Breadcrumb.Item>
 
-                </Breadcrumb>
-                <div style={{ background: '#fff', padding: 24, minHeight: 380 }}>
+                    </Breadcrumb>
+                    <div style={{ background: '#fff', padding: 24, minHeight: 380 }}>
 
-                    {props.children}
+                        {this.props.children}
 
-                </div>
-            </Content>
-            <Footer style={{ textAlign: 'center' }}>Ant Design ©2019 Created by Kennedy W</Footer>
-        </Layout>
-    )
+                    </div>
+                </Content>
+                <Footer style={{ textAlign: 'center' }}>Ant Design ©2019 Created by Kennedy W</Footer>
+            </Layout>
+        )
+
+    }
 }
 
 
-export default CustomLayout
+
+const mapDispatchToProps = dispatch => {
+    return {
+        logout: () => dispatch(actions.logout())
+    }
+}
+
+export default connect(mapDispatchToProps)(CustomLayout)
+
+
+
 
