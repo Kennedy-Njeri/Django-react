@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5f59821-d76c-4e11-8ca6-d3ef1e4bec07" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/articles/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/articles/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/backend/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/djangoreact/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/djangoreact/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/gui/src/containers/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/gui/src/containers/Layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/gui/src/containers/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/gui/src/containers/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/gui/src/containers/Signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/gui/src/containers/Signup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/gui/src/store/actions/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/gui/src/store/actions/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/gui/src/components/Article.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/gui/src/components/Article.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/gui/src/components/Form.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/gui/src/components/Form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/gui/src/containers/ArticleDetailView.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/gui/src/containers/ArticleDetailView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/gui/src/containers/ArticleListView.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/gui/src/containers/ArticleListView.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,29 +47,29 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="1" />
-          <entry key="py" value="960" />
+          <entry key="py" value="1076" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="1" />
-          <entry key="Python" value="960" />
+          <entry key="Python" value="1076" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/backend/djangoreact/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="136" lean-forward="true" selection-start-line="136" selection-end-line="136" />
+            <state relative-caret-position="166">
+              <caret line="118" column="3" selection-start-line="118" selection-start-column="3" selection-end-line="118" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/djangoreact/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
@@ -119,8 +121,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/articles/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="271">
+              <caret line="39" column="56" lean-forward="true" selection-start-line="39" selection-start-column="56" selection-end-line="39" selection-end-column="56" />
+              <folding>
+                <element signature="e#0#42#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -157,8 +162,8 @@
         <option value="$PROJECT_DIR$/backend/articles/serializers.py" />
         <option value="$PROJECT_DIR$/backend/articles/urls.py" />
         <option value="$PROJECT_DIR$/backend/articles/models.py" />
-        <option value="$PROJECT_DIR$/backend/articles/views.py" />
         <option value="$PROJECT_DIR$/backend/djangoreact/urls.py" />
+        <option value="$PROJECT_DIR$/backend/articles/views.py" />
         <option value="$PROJECT_DIR$/backend/djangoreact/settings.py" />
       </list>
     </option>
@@ -178,8 +183,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="5" />
-    <option name="y" value="389" />
+    <option name="x" value="322" />
+    <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="812" />
   </component>
@@ -307,7 +312,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="5" y="389" width="1440" height="812" extended-state="0" />
+    <frame x="322" y="23" width="1440" height="812" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
@@ -396,20 +401,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/articles/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/djangoreact/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="136" lean-forward="true" selection-start-line="136" selection-end-line="136" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/djangoreact/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -417,6 +408,23 @@
           <folding>
             <element signature="e#635#667#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/articles/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="39" column="56" lean-forward="true" selection-start-line="39" selection-start-column="56" selection-end-line="39" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/djangoreact/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="118" column="3" selection-start-line="118" selection-start-column="3" selection-end-line="118" selection-end-column="3" />
         </state>
       </provider>
     </entry>

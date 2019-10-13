@@ -7,6 +7,7 @@ from rest_framework.generics import (ListAPIView,
                                      DestroyAPIView
                                      )
 from rest_framework import viewsets
+from rest_framework.permissions import IsAuthenticated
 
 
 # class ArticleListView(ListAPIView):
@@ -40,3 +41,4 @@ class ArticleViewSet(viewsets.ModelViewSet):
     """
     serializer_class = ArticleSerializer
     queryset = Article.objects.all()
+    permission_classes = [IsAuthenticated]
