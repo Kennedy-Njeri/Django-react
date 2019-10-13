@@ -33,7 +33,6 @@ class ArticleList  extends React.Component {
         <CustomForm requestType="post" articleID={null} btnText="Create"/>
             </div>
 
-
         )
     }
 

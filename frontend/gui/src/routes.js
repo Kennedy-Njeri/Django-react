@@ -5,6 +5,7 @@ import ArticleDetail from "./containers/ArticleDetailView";
 import Login from "./containers/Login"
 import Signup from "./containers/Signup"
 
+
 const BaseRouter = () => (
     <div>
         <Route exact path='/' component={ArticleList}/>
