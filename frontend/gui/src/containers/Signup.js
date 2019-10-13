@@ -20,7 +20,7 @@ class RegistrationForm extends React.Component {
         e.preventDefault();
         this.props.form.validateFieldsAndScroll((err, values) => {
             if (!err) {
-                this.props.onAuth(values.userName, values.email, values.password, values.confirm)
+                this.props.onAuth(values.username, values.email, values.password, values.confirm)
                 console.log('Received values of form: ', values);
             }
             this.props.history.push("/")

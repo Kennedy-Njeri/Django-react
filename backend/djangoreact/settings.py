@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
 ]
 
+SITE_ID = 1
+
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
@@ -134,13 +136,18 @@ REST_FRAMEWORK = {
 CORS_ORIGIN_ALLOW_ALL = True
 
 
-SITE_ID = 1
+
 
 
 # https://django-allauth.readthedocs.io/en/latest/configuration.html
 
-ACCOUNT_EMAIL_REQUIRED = False
-
 ACCOUNT_EMAIL_VERIFICATION = "none"
 
 ACCOUNT_AUTHENTICATION_METHOD = 'username'
+
+ACCOUNT_EMAIL_REQUIRED = False
+
+
+
+
+

@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 
 import { Form, Icon, Input, Button, Spin } from 'antd';
 import * as actions from '../store/actions/auth'
@@ -15,7 +15,7 @@ class NormalLoginForm extends React.Component {
         e.preventDefault();
         this.props.form.validateFields((err, values) => {
             if (!err) {
-                this.props.onAuth(values.userName, values.password)
+                this.props.onAuth(values.username, values.password)
                 console.log('Received values of form: ', values);
             }
         });
