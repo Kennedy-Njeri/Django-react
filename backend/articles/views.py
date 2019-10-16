@@ -41,4 +41,4 @@ class ArticleViewSet(viewsets.ModelViewSet):
     """
     serializer_class = ArticleSerializer
     queryset = Article.objects.all()
-    permission_classes = [IsAuthenticated]
+    # permission_classes = [IsAuthenticated]

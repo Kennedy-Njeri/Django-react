@@ -31,8 +31,6 @@ class ArticleDetail  extends React.Component {
 
     }
 
-
-
     handleDelete = (event) => {
         if (this.props.token !== null){
             const articleID = this.props.match.params.articleID
