@@ -34,7 +34,6 @@ class CustomLayout extends React.Component{
                             <Link to="/">Posts</Link>
                         </Menu.Item>
 
-
                     </Menu>
                 </Header>
                 <Content style={{ padding: '0 50px', marginTop: 64 }}>
@@ -62,6 +61,7 @@ const mapDispatchToProps = dispatch => {
         logout: () => dispatch(actions.logout())
     }
 }
+
 
 export default withRouter(connect(mapDispatchToProps)(CustomLayout))
 
