@@ -8,6 +8,7 @@ import {connect} from 'react-redux'
 
 
 class ArticleDetail  extends React.Component {
+
     state = {
         article: {}
     }
@@ -46,7 +47,6 @@ class ArticleDetail  extends React.Component {
         }
 
     }
-
 
 
     render() {
