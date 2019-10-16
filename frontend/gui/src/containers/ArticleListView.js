@@ -6,9 +6,8 @@ import {connect} from 'react-redux'
 
 
 
-
-
 class ArticleList  extends React.Component {
+
     state = {
         articles: []
     }
@@ -40,7 +39,6 @@ class ArticleList  extends React.Component {
 
         <CustomForm requestType="post" articleID={null} btnText="Create"/>
             </div>
-
         )
     }
 
