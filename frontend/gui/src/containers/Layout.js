@@ -6,6 +6,8 @@ import {connect} from "react-redux";
 
 const { Header, Content, Footer } = Layout;
 
+
+
 class CustomLayout extends React.Component{
 
     render() {
