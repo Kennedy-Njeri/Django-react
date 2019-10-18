@@ -10,6 +10,7 @@ import {connect} from 'react-redux'
 
 
 
+
 class RegistrationForm extends React.Component {
     state = {
         confirmDirty: false,
@@ -26,6 +27,7 @@ class RegistrationForm extends React.Component {
             this.props.history.push("/")
         });
     };
+
 
     handleConfirmBlur = e => {
         const { value } = e.target;
