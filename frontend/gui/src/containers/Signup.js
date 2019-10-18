@@ -28,7 +28,6 @@ class RegistrationForm extends React.Component {
         });
     };
 
-
     handleConfirmBlur = e => {
         const { value } = e.target;
         this.setState({ confirmDirty: this.state.confirmDirty || !!value });
@@ -50,7 +49,6 @@ class RegistrationForm extends React.Component {
         }
         callback();
     };
-
 
 
     render() {
