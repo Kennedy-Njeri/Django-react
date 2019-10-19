@@ -19,7 +19,6 @@ class ArticleList  extends React.Component {
                 "Content-Type": "application/json",
                 Authorization: newProps.token
             }
-
             axios.get('http://127.0.0.1:8000/')
                 .then(res => {
                     this.setState({
@@ -42,7 +41,6 @@ class ArticleList  extends React.Component {
             </div>
         )
     }
-
 }
 
 const mapStateToProps = state => {
