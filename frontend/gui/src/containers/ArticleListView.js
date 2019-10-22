@@ -12,23 +12,42 @@ class ArticleList  extends React.Component {
         articles: []
     }
 
-    componentWillReceiveProps(newProps) {
-        console.log(newProps)
-        if (newProps.token) {
-            axios.defaults.headers = {
-                "Content-Type": "application/json",
-                Authorization: newProps.token
-            }
-            axios.get('http://127.0.0.1:8000/')
-                .then(res => {
-                    this.setState({
-                        articles: res.data
-                    })
-                    console.log(res.data)
-                })
-        }
 
+    fetchArticles = () => {
+        axios.get("http://127.0.0.1:8000/").then(res => {
+            this.setState({
+                articles: res.data
+            });
+        });
     }
+
+    componentDidMount() {
+        this.fetchArticles();
+    }
+
+    componentWillReceiveProps(newProps) {
+        if (newProps.token) {
+            this.fetchArticles();
+        }
+    }
+
+    // componentWillReceiveProps(newProps) {
+    //     console.log(newProps)
+    //     if (newProps.token) {
+    //         axios.defaults.headers = {
+    //             "Content-Type": "application/json",
+    //             Authorization: newProps.token
+    //         }
+    //         axios.get('http://127.0.0.1:8000/')
+    //             .then(res => {
+    //                 this.setState({
+    //                     articles: res.data
+    //                 })
+    //                 console.log(res.data)
+    //             })
+    //     }
+    //
+    // }
 
     render() {
         return (
