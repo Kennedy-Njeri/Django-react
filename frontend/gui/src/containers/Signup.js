@@ -17,6 +17,7 @@ class RegistrationForm extends React.Component {
         autoCompleteResult: [],
     };
 
+
     handleSubmit = e => {
         e.preventDefault();
         this.props.form.validateFieldsAndScroll((err, values) => {
@@ -27,6 +28,7 @@ class RegistrationForm extends React.Component {
             this.props.history.push("/")
         });
     };
+
 
     handleConfirmBlur = e => {
         const { value } = e.target;
