@@ -5,6 +5,7 @@ import {connect} from "react-redux";
 
 class CustomForm extends React.Component {
 
+
     handleFormSubmit = (event, requestType, articleID) => {
         //event.preventDefault()
         const title = event.target.elements.title.value
