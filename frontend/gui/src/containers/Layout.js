@@ -35,8 +35,8 @@ class CustomLayout extends React.Component{
                         <Menu.Item key="1">
                             <Link to="/">Posts</Link>
                         </Menu.Item>
-
                     </Menu>
+
                 </Header>
                 <Content style={{ padding: '0 50px', marginTop: 64 }}>
                     <Breadcrumb style={{ margin: '16px 0' }}>
