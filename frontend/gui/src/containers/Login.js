@@ -21,7 +21,6 @@ class NormalLoginForm extends React.Component {
         this.props.history.push("/")
     };
 
-
     render() {
         let errorMessage = null
         if (this.props.error) {
@@ -78,7 +77,6 @@ class NormalLoginForm extends React.Component {
     }
 }
 
-
 const WrappedNormalLoginForm = Form.create({ name: 'normal_login' })(NormalLoginForm);
 
 const mapStateToProps = (state) => {
@@ -87,7 +85,6 @@ const mapStateToProps = (state) => {
         error: state.error
     }
 }
-
 
 const mapDispatchToProps = dispatch => {
     return {
