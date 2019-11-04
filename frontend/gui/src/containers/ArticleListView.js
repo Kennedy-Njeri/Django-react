@@ -51,7 +51,9 @@ class ArticleList  extends React.Component {
     //
     // }
 
+
     render() {
+
         return (
             <div>
             <Articles data={this.state.articles}/>
@@ -61,6 +63,7 @@ class ArticleList  extends React.Component {
         <CustomForm requestType="post" articleID={null} btnText="Create"/>
             </div>
         )
+
     }
 }
 
