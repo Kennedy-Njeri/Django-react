@@ -38,6 +38,7 @@ class CustomLayout extends React.Component{
                     </Menu>
 
                 </Header>
+
                 <Content style={{ padding: '0 50px', marginTop: 64 }}>
                     <Breadcrumb style={{ margin: '16px 0' }}>
                         <Breadcrumb.Item><Link to="/">Home</Link></Breadcrumb.Item>
@@ -50,6 +51,7 @@ class CustomLayout extends React.Component{
 
                     </div>
                 </Content>
+
                 <Footer style={{ textAlign: 'center' }}>Ant Design ©2019 Created by Kennedy W</Footer>
             </Layout>
         )
