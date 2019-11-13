@@ -9,6 +9,8 @@ import {NavLink} from 'react-router-dom'
 const antIcon = <Icon type="loading" style={{ fontSize: 24 }} spin />;
 
 
+
+
 class NormalLoginForm extends React.Component {
     handleSubmit = e => {
         e.preventDefault();
