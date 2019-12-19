@@ -12,11 +12,8 @@ const antIcon = <Icon type="loading" style={{ fontSize: 24 }} spin />;
 
 
 class NormalLoginForm extends React.Component {
-
     handleSubmit = e => {
-
         e.preventDefault();
-
         this.props.form.validateFields((err, values) => {
             if (!err) {
                 this.props.onAuth(values.username, values.password)
