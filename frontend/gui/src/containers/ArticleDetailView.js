@@ -13,7 +13,6 @@ class ArticleDetail  extends React.Component {
         article: {}
     }
 
-
     componentDidMount() {
 
         const articleID = this.props.match.params.articleID;
@@ -75,6 +74,7 @@ class ArticleDetail  extends React.Component {
             })
     };
 
+
     render() {
         return (
             <div>
@@ -88,6 +88,7 @@ class ArticleDetail  extends React.Component {
             </div>
         )
     }
+
 
 }
 
