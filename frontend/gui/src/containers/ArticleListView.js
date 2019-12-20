@@ -22,9 +22,11 @@ class ArticleList  extends React.Component {
     }
 
 
+
     componentDidMount() {
         this.fetchArticles();
     }
+
 
 
     componentWillReceiveProps(newProps) {
